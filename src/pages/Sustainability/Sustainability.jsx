@@ -64,23 +64,24 @@ const Sustainability = () => {
         >
           <h1>OUR APPROACH TOWARDS SUSTAINABILITY</h1>
           <p>
-            At Emaar, we consider sustainability to be a fundamental aspect of
-            our lives. It is an investment in the future of both society and
-            ourselves. Therefore, we are confident that integrating
+            At Emerald Prestige, we consider sustainability to be a fundamental
+            aspect of our lives. It is an investment in the future of both
+            society and ourselves. Therefore, we are confident that integrating
             sustainability into our business strategy will result in economic,
-            environmental, and social advancement. <br /> <br /> Emaar’s overall
-            approach to sustainability is guided by our Sustainable Development
-            Goals. In addition, our Code of Conduct guides the behaviour of all
-            employees in relation to their colleagues, local communities, and
-            the environment. At an operational level, we have a suite of
-            procedures and policies that we follow in line with national
-            regulatory and international standards. <br /> <br /> All of these
-            factors influence our approach to providing high-quality jobs, safe
-            and secure employment, employee well-being, and opportunities for
-            professional development. In addition, they influence how we
-            communicate and consult with our investors, communities, government
-            bodies, and suppliers in our operating areas, as well as how we
-            monitor and enhance our sustainable performance.
+            environmental, and social advancement. <br /> <br /> Emerald
+            Prestige’s overall approach to sustainability is guided by our
+            Sustainable Development Goals. In addition, our Code of Conduct
+            guides the behaviour of all employees in relation to their
+            colleagues, local communities, and the environment. At an
+            operational level, we have a suite of procedures and policies that
+            we follow in line with national regulatory and international
+            standards. <br /> <br /> All of these factors influence our approach
+            to providing high-quality jobs, safe and secure employment, employee
+            well-being, and opportunities for professional development. In
+            addition, they influence how we communicate and consult with our
+            investors, communities, government bodies, and suppliers in our
+            operating areas, as well as how we monitor and enhance our
+            sustainable performance.
           </p>
           <button className="btn btn-secondary">
             View More <ArrowForwardIcon />

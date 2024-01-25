@@ -14,11 +14,11 @@ const Properties = () => {
         <Grid item sx={12} sm={4}>
           <div>
             <Heading title={"Properties"} />
-            <h1>EMAAR LEADING REAL ESTATE DEVELOPER IN DUBAI</h1>
+            <h1>Emerald Prestige LEADING REAL ESTATE DEVELOPER IN DUBAI</h1>
             <p>
               Our properties each have their own unique design aesthetic,
               providing an aspirational lifestyle within a thriving community,
-              supported by Emaar’s community management team.
+              supported by Emerald Prestige’s community management team.
             </p>
             <button className="btn btn-secondary">View All Properties</button>
           </div>
@@ -28,33 +28,33 @@ const Properties = () => {
             height={"500px"}
             title={"AEON"}
             desc={"DUBAI CREEK HARBOUR"}
-            img={"/assets/home.jpg"}
+            img={"/assets/prop-aeon.jpg"}
           />
           <PropertiesTile
             height={"225px"}
-            title={"AEON"}
-            desc={"DUBAI CREEK HARBOUR"}
-            img={"/assets/home.jpg"}
+            title={"ADDRESS RESIDENCES"}
+            desc={"ADDRESS AL MARJAN ISLAND, RAS AL KHAIMAH"}
+            img={"/assets/prop-avonlea.jpg"}
           />
         </Grid>
         <Grid item xs={12} sm={4}>
           <PropertiesTile
             height={"225px"}
-            title={"AEON"}
-            desc={"DUBAI CREEK HARBOUR"}
-            img={"/assets/home.jpg"}
+            title={"PARK GATE"}
+            desc={"DUBAI HILLS ESTATE"}
+            img={"/assets/prop-park.jpg"}
           />
           <PropertiesTile
             height={"225px"}
-            title={"AEON"}
-            desc={"DUBAI CREEK HARBOUR"}
-            img={"/assets/home.jpg"}
+            title={"AVONLEA"}
+            desc={"RASHID YACHTS & MARINA"}
+            img={"/assets/prop-address.jpg"}
           />
           <PropertiesTile
             height={"225px"}
-            title={"AEON"}
-            desc={"DUBAI CREEK HARBOUR"}
-            img={"/assets/home.jpg"}
+            title={"BAYLINE"}
+            desc={"RASHID YACHTS & MARINA"}
+            img={"/assets/prop-bayline.jpg"}
           />
         </Grid>
       </Grid>

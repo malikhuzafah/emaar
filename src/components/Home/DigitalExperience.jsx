@@ -62,8 +62,8 @@ const DigitalExperience = () => {
             <Heading title={"A Digital Experience"} />
             <h1>THE ONE APP YOU NEED FOR ALL YOUR PROPERTY NEEDS</h1>
             <p>
-              Emaar One allows homeowners and tenants to fully manage their
-              property from their phone anytime anywhere.
+              Emerald Prestige One allows homeowners and tenants to fully manage
+              their property from their phone anytime anywhere.
             </p>
             <Grid container spacing={2}>
               {data.map((item, index) => {
@@ -117,7 +117,7 @@ const DigitalExperience = () => {
                 alignItems: "center",
               }}
             >
-              <h3>Download EMAAR one app</h3>
+              <h3>Download Emerald Prestige one app</h3>
             </div>
           </div>
         </Grid>

@@ -64,8 +64,24 @@ function MenuBar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          {/* <div
+            style={{
+              backgroundImage: "url(/asstes/logo.jpg)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              height: "200px",
+              width: "400px",
+            }}
+          ></div> */}
+          <img
+            src="/assets/logo.jpg"
+            alt="Emerald Prestige"
+            height={50}
+            width={100}
+          />
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -81,7 +97,7 @@ function MenuBar() {
             }}
           >
             EMAAR
-          </Typography>
+          </Typography> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -119,7 +135,8 @@ function MenuBar() {
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
+
+          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -136,7 +153,7 @@ function MenuBar() {
               textDecoration: "none",
             }}
           >
-            EMAAR
+            Emerald Prestige
           </Typography>
           <Box
             sx={{

@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   const footerContent = [
     {
-      title: "About Emaar",
+      title: "About Emerald Prestige",
       subs: [
         {
           subtitle: "who we are",
@@ -33,7 +33,7 @@ const Footer = () => {
           link: "/about",
         },
         {
-          subtitle: "emaar blogs & real estate insights",
+          subtitle: "Emerald Prestige blogs & real estate insights",
           link: "/about",
         },
         {
@@ -45,7 +45,7 @@ const Footer = () => {
           link: "/about",
         },
         {
-          subtitle: "emaar sustainability",
+          subtitle: "Emerald Prestige sustainability",
           link: "/about",
         },
       ],
@@ -70,7 +70,7 @@ const Footer = () => {
           link: "/about",
         },
         {
-          subtitle: "emaar south",
+          subtitle: "Emerald Prestige south",
           link: "/about",
         },
         {
@@ -78,7 +78,7 @@ const Footer = () => {
           link: "/about",
         },
         {
-          subtitle: "emaar beachfront",
+          subtitle: "Emerald Prestige beachfront",
           link: "/about",
         },
       ],
@@ -129,7 +129,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "Emaar International",
+      title: "Emerald Prestige International",
       subs: [
         {
           subtitle: "ksa",
@@ -180,7 +180,7 @@ const Footer = () => {
                 alignItems: "center",
               }}
             >
-              <h2>EMAAR</h2>
+              <h2>Emerald Prestige</h2>
               <Divider
                 orientation="vertical"
                 flexItem
@@ -252,7 +252,9 @@ const Footer = () => {
             style={{ marginRight: "20px" }}
           />
           <div style={{ marginRight: "20px" }}>
-            <Typography>Emaar Properties Terms and Conditions</Typography>
+            <Typography>
+              Emerald Prestige Properties Terms and Conditions
+            </Typography>
           </div>
           <Divider
             orientation="vertical"

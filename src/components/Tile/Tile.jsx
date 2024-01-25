@@ -4,7 +4,7 @@ import React from "react";
 const Tile = ({ title, desc, img, link }) => {
   return (
     <Grid item xs={12} md={4}>
-      <a href="">
+      <a href={link}>
         <div
           style={{
             width: "100%",
@@ -24,7 +24,7 @@ const Tile = ({ title, desc, img, link }) => {
       >
         <h1>{title}</h1>
         <p>{desc}</p>
-        <button className="btn btn-secondary">Learn More</button>
+        <button className="btn btn-secondary">Read More</button>
       </div>
     </Grid>
   );

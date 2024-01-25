@@ -69,12 +69,12 @@ const About = () => {
 
   const other = [
     {
-      title: "EMAAR HOSPITALITY",
+      title: "Emerald Prestige HOSPITALITY",
       img: "/assets/home.jpg",
       link: "/",
     },
     {
-      title: "EMAAR MALLS",
+      title: "Emerald Prestige MALLS",
       img: "/assets/home.jpg",
       link: "/",
     },
@@ -84,7 +84,7 @@ const About = () => {
       link: "/",
     },
     {
-      title: "EMAAR ENTERTAINMENT",
+      title: "Emerald Prestige ENTERTAINMENT",
       img: "/assets/home.jpg",
       link: "/",
     },
@@ -93,19 +93,19 @@ const About = () => {
   const abouts = [
     {
       title: "Investor Relations",
-      desc: "Emaar is a Public Joint Stock Company listed on the Dubai Financial Market. View Emaar’s stock market trends and related data.",
+      desc: "Emerald Prestige is a Public Joint Stock Company listed on the Dubai Financial Market. View Emerald Prestige’s stock market trends and related data.",
       link: "/",
       img: "/assets/about-relations.jpg",
     },
     {
       title: "Investor Relations",
-      desc: "Emaar is a Public Joint Stock Company listed on the Dubai Financial Market. View Emaar’s stock market trends and related data.",
+      desc: "Emerald Prestige is a Public Joint Stock Company listed on the Dubai Financial Market. View Emerald Prestige’s stock market trends and related data.",
       link: "/",
       img: "/assets/about-relations.jpg",
     },
     {
       title: "Investor Relations",
-      desc: "Emaar is a Public Joint Stock Company listed on the Dubai Financial Market. View Emaar’s stock market trends and related data.",
+      desc: "Emerald Prestige is a Public Joint Stock Company listed on the Dubai Financial Market. View Emerald Prestige’s stock market trends and related data.",
       img: "/assets/about-relations.jpg",
       link: "/",
     },
@@ -134,13 +134,13 @@ const About = () => {
         >
           <Container>
             <Heading title="Overview" />
-            <h1>ABOUT EMAAR PROPERTIES</h1>
+            <h1>ABOUT Emerald Prestige PROPERTIES</h1>
             <p>
-              With a net asset value of 138.1B AED (37.6B USD)*, Emaar
-              Properties is among the most admired and valuable real estate
-              development companies in the world. Emaar, which has established
-              competencies in real estate, retail and shopping malls,
-              hospitality, and leisure, shapes new lifestyles through its
+              With a net asset value of 138.1B AED (37.6B USD)*, Emerald
+              Prestige Properties is among the most admired and valuable real
+              estate development companies in the world. Emerald Prestige, which
+              has established competencies in real estate, retail and shopping
+              malls, hospitality, and leisure, shapes new lifestyles through its
               commitment to design excellence, build quality, and timely
               delivery.
             </p>
@@ -183,7 +183,7 @@ const About = () => {
               "WE ARE SHARPENING OUR STRATEGY TO BE ONE OF THE WORLD'S MOST
               VALUABLE, MOST INNOVATIVE AND MOST ADMIRED COMPANIES"
             </h2>
-            <Heading title="FOUNDER | MOHAMED ALABBAR" />
+            <Heading title="FOUNDER | Muhammad Talha" />
             <button className="btn btn-secondary">Read Founder's letter</button>
           </div>
         </div>
@@ -242,7 +242,7 @@ const About = () => {
           }}
         >
           <Heading title={"More"} />
-          <h1>Other EMAAR Business</h1>
+          <h1>Other Emerald Prestige Business</h1>
           <Grid container spacing={2}>
             {other.map((item, index) => {
               return (

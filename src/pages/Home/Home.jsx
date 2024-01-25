@@ -18,14 +18,14 @@ const Home = () => {
           display: "flex",
           alignItems: "end",
           justifyContent: "center",
-          backgroundImage: "url(/assets/home.jpg)",
+          backgroundImage:
+            "linear-gradient(0deg, rgba(0,0,0,0.3) 23%, rgba(0,0,0,0.2) 100%), url(/assets/home.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
         <SearchFilterBar />
-        {/* <h1>Welcome to the Home Page</h1> */}
       </div>
       <Container>
         <div
@@ -40,23 +40,21 @@ const Home = () => {
           <Tile
             title={"Communities 360° Tour"}
             desc={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor excepturi nulla aliquid, ratione sit repellendus impedit voluptatum doloremque a corporis, voluptatibus, soluta cumque laboriosam ipsum nemo quia. Facere, fugiat?"
+              "Experience Dubai Hills Estate communities and amenities from the comfort of your home."
             }
             img={"/assets/com-1.jpg"}
             link={"/"}
           />
           <Tile
-            title={"Communities 360° Tour"}
-            desc={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor excepturi nulla aliquid, ratione sit repellendus impedit voluptatum doloremque a corporis, voluptatibus, soluta cumque laboriosam ipsum nemo quia. Facere, fugiat?"
-            }
+            title={"International Projects"}
+            desc={"Explore our portfolio of international projects."}
             img={"/assets/com-2.jpg"}
             link={"/"}
           />
           <Tile
-            title={"Communities 360° Tour"}
+            title={"Discover Our Blogs"}
             desc={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor excepturi nulla aliquid, ratione sit repellendus impedit voluptatum doloremque a corporis, voluptatibus, soluta cumque laboriosam ipsum nemo quia. Facere, fugiat?"
+              "Click to read our top tips and tricks for property management, home decoration and more."
             }
             img={"/assets/com-3.jpg"}
             link={"/"}

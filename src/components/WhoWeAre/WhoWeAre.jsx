@@ -5,18 +5,18 @@ import WhoWeAreItem from "./WhoWeAreItem";
 const WhoWeAre = () => {
   const whoWeAre = [
     {
-      title: "EMAAR PROPERTIES BOARD OF DIRECTORS",
-      desc: "Emaar's leadership team is comprised of the industry's most experienced leaders, who have secured our place as one of the world's greatest real estate and lifestyle developers.",
+      title: "Emerald Prestige PROPERTIES BOARD OF DIRECTORS",
+      desc: "Emerald Prestige's leadership team is comprised of the industry's most experienced leaders, who have secured our place as one of the world's greatest real estate and lifestyle developers.",
       link: "/",
     },
     {
-      title: "EMAAR PROPERTIES BOARD OF DIRECTORS",
-      desc: "Emaar's leadership team is comprised of the industry's most experienced leaders, who have secured our place as one of the world's greatest real estate and lifestyle developers.",
+      title: "Emerald Prestige PROPERTIES BOARD OF DIRECTORS",
+      desc: "Emerald Prestige's leadership team is comprised of the industry's most experienced leaders, who have secured our place as one of the world's greatest real estate and lifestyle developers.",
       link: "/",
     },
     {
-      title: "EMAAR PROPERTIES BOARD OF DIRECTORS",
-      desc: "Emaar's leadership team is comprised of the industry's most experienced leaders, who have secured our place as one of the world's greatest real estate and lifestyle developers.",
+      title: "Emerald Prestige PROPERTIES BOARD OF DIRECTORS",
+      desc: "Emerald Prestige's leadership team is comprised of the industry's most experienced leaders, who have secured our place as one of the world's greatest real estate and lifestyle developers.",
       link: "/",
     },
   ];
