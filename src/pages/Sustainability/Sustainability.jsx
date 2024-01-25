@@ -9,30 +9,37 @@ const Sustainability = () => {
   const data = [
     {
       title: "Our Stories",
+      img: "/assets/sustainability.jpg",
       link: "/",
     },
     {
       title: "Our Stories",
+      img: "/assets/sustainability.jpg",
       link: "/",
     },
     {
       title: "Our Stories",
+      img: "/assets/sustainability.jpg",
       link: "/",
     },
     {
       title: "Our Stories",
+      img: "/assets/sustainability.jpg",
       link: "/",
     },
     {
       title: "Our Stories",
+      img: "/assets/sustainability.jpg",
       link: "/",
     },
     {
       title: "Our Stories",
+      img: "/assets/sustainability.jpg",
       link: "/",
     },
     {
       title: "Our Stories",
+      img: "/assets/sustainability.jpg",
       link: "/",
     },
   ];
@@ -42,7 +49,10 @@ const Sustainability = () => {
       <div
         style={{
           height: "80vh",
-          backgroundColor: "#000000",
+          backgroundImage: "url(/assets/sustainability.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       ></div>
       <Container>
@@ -99,7 +109,11 @@ const Sustainability = () => {
             {data.map((item, index) => {
               return (
                 <Grid item xs={12} sm={6} md={4} key={index}>
-                  <SustainabilityTile title={item.title} link={item.link} />
+                  <SustainabilityTile
+                    title={item.title}
+                    link={item.link}
+                    img={item.img}
+                  />
                 </Grid>
               );
             })}

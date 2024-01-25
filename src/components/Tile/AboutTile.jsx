@@ -1,9 +1,17 @@
 import React from "react";
 
-const AboutTile = ({ title, desc, link }) => {
+const AboutTile = ({ title, desc, img, link }) => {
   return (
     <div>
-      <div style={{ height: "200px", backgroundColor: "#000000" }}></div>
+      <div
+        style={{
+          height: "200px",
+          backgroundImage: `url(${img})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
       <div
         style={{
           backgroundColor: "#ffffff",

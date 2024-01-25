@@ -10,7 +10,10 @@ const Award = ({ title, desc, img, link, year }) => {
       <div
         style={{
           height: "300px",
-          backgroundColor: "#000000",
+          backgroundImage: `url(${img})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       ></div>
       <h3>{title}</h3>

@@ -11,6 +11,9 @@ const Tile = ({ title, desc, img, link }) => {
             aspectRatio: "1/1",
             backgroundColor: "#000000",
             backgroundImage: `url(${img})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         ></div>
       </a>

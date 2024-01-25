@@ -13,56 +13,56 @@ const About = () => {
       title: "DUBAI HILLS PARK - SUSTAINABILITY PRIZE",
       desc: "LANDSCAPE MIDDLE EAST AWARDS IN PARKS & RECREATION",
       year: "2023",
-      img: "https://www.emaar.com/en/images/awards/award-1.jpg",
+      img: "/assets/about-award.jpg",
       link: "/",
     },
     {
       title: "DUBAI HILLS PARK - SUSTAINABILITY PRIZE",
       desc: "LANDSCAPE MIDDLE EAST AWARDS IN PARKS & RECREATION",
       year: "2023",
-      img: "https://www.emaar.com/en/images/awards/award-1.jpg",
+      img: "/assets/about-award.jpg",
       link: "/",
     },
     {
       title: "DUBAI HILLS PARK - SUSTAINABILITY PRIZE",
       desc: "LANDSCAPE MIDDLE EAST AWARDS IN PARKS & RECREATION",
       year: "2023",
-      img: "https://www.emaar.com/en/images/awards/award-1.jpg",
+      img: "/assets/about-award.jpg",
       link: "/",
     },
     {
       title: "DUBAI HILLS PARK - SUSTAINABILITY PRIZE",
       desc: "LANDSCAPE MIDDLE EAST AWARDS IN PARKS & RECREATION",
       year: "2023",
-      img: "https://www.emaar.com/en/images/awards/award-1.jpg",
+      img: "/assets/about-award.jpg",
       link: "/",
     },
     {
       title: "DUBAI HILLS PARK - SUSTAINABILITY PRIZE",
       desc: "LANDSCAPE MIDDLE EAST AWARDS IN PARKS & RECREATION",
       year: "2023",
-      img: "https://www.emaar.com/en/images/awards/award-1.jpg",
+      img: "/assets/about-award.jpg",
       link: "/",
     },
     {
       title: "DUBAI HILLS PARK - SUSTAINABILITY PRIZE",
       desc: "LANDSCAPE MIDDLE EAST AWARDS IN PARKS & RECREATION",
       year: "2023",
-      img: "https://www.emaar.com/en/images/awards/award-1.jpg",
+      img: "/assets/about-award.jpg",
       link: "/",
     },
     {
       title: "DUBAI HILLS PARK - SUSTAINABILITY PRIZE",
       desc: "LANDSCAPE MIDDLE EAST AWARDS IN PARKS & RECREATION",
       year: "2023",
-      img: "https://www.emaar.com/en/images/awards/award-1.jpg",
+      img: "/assets/about-award.jpg",
       link: "/",
     },
     {
       title: "DUBAI HILLS PARK - SUSTAINABILITY PRIZE",
       desc: "LANDSCAPE MIDDLE EAST AWARDS IN PARKS & RECREATION",
       year: "2023",
-      img: "https://www.emaar.com/en/images/awards/award-1.jpg",
+      img: "/assets/about-award.jpg",
       link: "/",
     },
   ];
@@ -70,18 +70,22 @@ const About = () => {
   const other = [
     {
       title: "EMAAR HOSPITALITY",
+      img: "/assets/home.jpg",
       link: "/",
     },
     {
       title: "EMAAR MALLS",
+      img: "/assets/home.jpg",
       link: "/",
     },
     {
       title: "BURJ KHALIFA",
+      img: "/assets/home.jpg",
       link: "/",
     },
     {
       title: "EMAAR ENTERTAINMENT",
+      img: "/assets/home.jpg",
       link: "/",
     },
   ];
@@ -91,15 +95,18 @@ const About = () => {
       title: "Investor Relations",
       desc: "Emaar is a Public Joint Stock Company listed on the Dubai Financial Market. View Emaar’s stock market trends and related data.",
       link: "/",
+      img: "/assets/about-relations.jpg",
     },
     {
       title: "Investor Relations",
       desc: "Emaar is a Public Joint Stock Company listed on the Dubai Financial Market. View Emaar’s stock market trends and related data.",
       link: "/",
+      img: "/assets/about-relations.jpg",
     },
     {
       title: "Investor Relations",
       desc: "Emaar is a Public Joint Stock Company listed on the Dubai Financial Market. View Emaar’s stock market trends and related data.",
+      img: "/assets/about-relations.jpg",
       link: "/",
     },
   ];
@@ -109,9 +116,12 @@ const About = () => {
       <div
         style={{
           height: "100vh",
-          backgroundColor: "lightblue",
           display: "flex",
           alignItems: "end",
+          backgroundImage: "url(/assets/about.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div
@@ -153,9 +163,12 @@ const About = () => {
         <div
           style={{
             height: "80vh",
-            backgroundColor: "lightblue",
             display: "flex",
             alignItems: "end",
+            backgroundImage: "url(/assets/about-founder.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         >
           <div
@@ -258,7 +271,7 @@ const About = () => {
             {other.map((item, index) => {
               return (
                 <Grid item xs={12} sm={6} lg={3} key={index}>
-                  <Award title={item.title} link={item.link} />
+                  <Award title={item.title} link={item.link} img={item.img} />
                 </Grid>
               );
             })}
@@ -281,6 +294,7 @@ const About = () => {
                     title={item.title}
                     desc={item.desc}
                     link={item.link}
+                    img={item.img}
                   />
                 </Grid>
               );

@@ -13,10 +13,17 @@ const OfferTile = ({ title, desc, link, img }) => {
         style={{
           height: "150px",
           width: "120px",
-          backgroundColor: "#000000",
+          backgroundImage: `url(${img})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       ></div>
-      <div>
+      <div
+        style={{
+          marginLeft: "20px",
+        }}
+      >
         <h2>{title}</h2>
         <p>{desc}</p>
       </div>

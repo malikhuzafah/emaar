@@ -6,6 +6,7 @@ import Properties from "../../components/Home/Properties";
 import Footer from "../../components/Footer/Footer";
 import SearchFilterBar from "../../components/SearchFilterBar";
 import Heading from "../../components/Heading/Heading";
+import Communities from "../Communities/Communities";
 
 const Home = () => {
   return (
@@ -17,6 +18,10 @@ const Home = () => {
           display: "flex",
           alignItems: "end",
           justifyContent: "center",
+          backgroundImage: "url(/assets/home.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <SearchFilterBar />
@@ -37,7 +42,7 @@ const Home = () => {
             desc={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor excepturi nulla aliquid, ratione sit repellendus impedit voluptatum doloremque a corporis, voluptatibus, soluta cumque laboriosam ipsum nemo quia. Facere, fugiat?"
             }
-            img={"/assets/images/communities.jpg"}
+            img={"/assets/com-1.jpg"}
             link={"/"}
           />
           <Tile
@@ -45,7 +50,7 @@ const Home = () => {
             desc={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor excepturi nulla aliquid, ratione sit repellendus impedit voluptatum doloremque a corporis, voluptatibus, soluta cumque laboriosam ipsum nemo quia. Facere, fugiat?"
             }
-            img={"/assets/images/communities.jpg"}
+            img={"/assets/com-2.jpg"}
             link={"/"}
           />
           <Tile
@@ -53,13 +58,18 @@ const Home = () => {
             desc={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor excepturi nulla aliquid, ratione sit repellendus impedit voluptatum doloremque a corporis, voluptatibus, soluta cumque laboriosam ipsum nemo quia. Facere, fugiat?"
             }
-            img={"/assets/images/communities.jpg"}
+            img={"/assets/com-3.jpg"}
             link={"/"}
           />
         </Grid>
         <DigitalExperience />
         <Properties />
       </Container>
+      <Container>
+        <Heading title={"Communities"} />
+        <h1>Featured Communities</h1>
+      </Container>
+      <Communities />
       <Footer />
     </div>
   );

@@ -12,13 +12,31 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { useNavigate, useLocation } from "react-router-dom";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = [
+  { name: "About us", link: "/about" },
+  { name: "Sustainability", link: "/sustainability" },
+  { name: "Communities", link: "/communities" },
+  { name: "Offers", link: "/offers" },
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function MenuBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [home, setHome] = React.useState(true);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { hash, pathname, search } = location;
+
+  React.useEffect(() => {
+    if (pathname === "/") {
+      setHome(true);
+    } else {
+      setHome(false);
+    }
+  }, [hash, pathname, search]);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -37,10 +55,12 @@ function MenuBar() {
 
   return (
     <AppBar
-      position="absolute"
+      position={home ? "absolute" : "static"}
       style={{
         backgroundColor: "transparent",
+        color: home ? "#ffffff" : "#000000",
       }}
+      elevation={0}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -92,9 +112,9 @@ function MenuBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map((page, index) => (
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -118,14 +138,29 @@ function MenuBar() {
           >
             EMAAR
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+            }}
+            style={{
+              marginLeft: "40px",
+            }}
+          >
             {pages.map((page) => (
               <Button
+                style={{
+                  fontFamily: "monospace",
+                  color: "inherit",
+                }}
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => {
+                  navigate(page.link);
+                  handleCloseNavMenu();
+                }}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>

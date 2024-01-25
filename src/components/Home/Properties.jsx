@@ -1,6 +1,7 @@
 import { Divider, Grid, Typography } from "@mui/material";
 import React from "react";
 import PropertiesTile from "../Tile/PropertiesTile";
+import Heading from "../Heading/Heading";
 
 const Properties = () => {
   return (
@@ -12,9 +13,7 @@ const Properties = () => {
       <Grid container spacing={2}>
         <Grid item sx={12} sm={4}>
           <div>
-            <Typography>
-              Properties <Divider />
-            </Typography>
+            <Heading title={"Properties"} />
             <h1>EMAAR LEADING REAL ESTATE DEVELOPER IN DUBAI</h1>
             <p>
               Our properties each have their own unique design aesthetic,
@@ -41,11 +40,13 @@ const Properties = () => {
             height={"500px"}
             title={"AEON"}
             desc={"DUBAI CREEK HARBOUR"}
+            img={"/assets/home.jpg"}
           />
           <PropertiesTile
             height={"225px"}
             title={"AEON"}
             desc={"DUBAI CREEK HARBOUR"}
+            img={"/assets/home.jpg"}
           />
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -53,16 +54,19 @@ const Properties = () => {
             height={"225px"}
             title={"AEON"}
             desc={"DUBAI CREEK HARBOUR"}
+            img={"/assets/home.jpg"}
           />
           <PropertiesTile
             height={"225px"}
             title={"AEON"}
             desc={"DUBAI CREEK HARBOUR"}
+            img={"/assets/home.jpg"}
           />
           <PropertiesTile
             height={"225px"}
             title={"AEON"}
             desc={"DUBAI CREEK HARBOUR"}
+            img={"/assets/home.jpg"}
           />
         </Grid>
       </Grid>
