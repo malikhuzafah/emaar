@@ -1,0 +1,106 @@
+.filter {
+  position: relative;
+  display: inline-block;
+  border-right: 1px solid gray;
+  height: 60%;
+  padding-right: 30px;
+}
+
+.filter__button {
+  border-radius: 0.125rem;
+  padding: 0.5rem 1rem;
+  background-color: #2b7de9;
+  background-image: none;
+  cursor: pointer;
+  border: transparent;
+  font-weight: 600;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.filter__button:hover {
+  background-color: #176dde;
+}
+.filter__button:focus {
+  outline: 1px dotted;
+  outline: 1px auto -webkit-focus-ring-color;
+}
+.filter__dropdown {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  display: none;
+  width: 25rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  left: 0;
+  max-height: calc(100vh - 152px);
+  transition: 2ms;
+  position: absolute;
+  margin-top: 2.2rem;
+  background-color: white;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@media (min-width: 768px) {
+  .filter__dropdown {
+    display: block;
+  }
+}
+.filter__dropdown__actions {
+  border-top-width: 1px;
+  border-top-color: #e4e7eb;
+  border-top-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.75rem 0.5rem 0.25rem 0.5rem;
+}
+
+.filter__dropdown__actions button {
+  border-radius: 0.125rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #2b7de9;
+  border-color: transparent;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.options__container {
+  /* display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0.5rem;
+  max-height: 20rem; */
+  user-select: none;
+  column-count: 2;
+  padding: 15px 30px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.checkbox {
+  transform: scale(2);
+}
+.checkbox-label {
+  margin-left: 8px;
+}
+.option {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+}
+.clear-button {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: gray;
+  user-select: none;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
