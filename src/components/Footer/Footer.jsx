@@ -1,7 +1,168 @@
 import React from "react";
-import { BottomNavigation, Container, Divider, Grid } from "@mui/material";
+import {
+  BottomNavigation,
+  Container,
+  Divider,
+  Grid,
+  Typography,
+} from "@mui/material";
 
 const Footer = () => {
+  const footerContent = [
+    {
+      title: "About Emaar",
+      subs: [
+        {
+          subtitle: "who we are",
+          link: "/about",
+        },
+        {
+          subtitle: "contact us",
+          link: "/about",
+        },
+        {
+          subtitle: "careers",
+          link: "/about",
+        },
+        {
+          subtitle: "investor relations",
+          link: "/about",
+        },
+        {
+          subtitle: "press releases",
+          link: "/about",
+        },
+        {
+          subtitle: "emaar blogs & real estate insights",
+          link: "/about",
+        },
+        {
+          subtitle: "mortgage calculator",
+          link: "/about",
+        },
+        {
+          subtitle: "gifts & scam disclaimer",
+          link: "/about",
+        },
+        {
+          subtitle: "emaar sustainability",
+          link: "/about",
+        },
+      ],
+    },
+    {
+      title: "Communities",
+      subs: [
+        {
+          subtitle: "dubai creek harbour",
+          link: "/about",
+        },
+        {
+          subtitle: "downtown dubai",
+          link: "/about",
+        },
+        {
+          subtitle: "dubai marina",
+          link: "/about",
+        },
+        {
+          subtitle: "dubai hills estate",
+          link: "/about",
+        },
+        {
+          subtitle: "emaar south",
+          link: "/about",
+        },
+        {
+          subtitle: "arabian ranches",
+          link: "/about",
+        },
+        {
+          subtitle: "emaar beachfront",
+          link: "/about",
+        },
+      ],
+    },
+    {
+      title: "Latest Launch",
+      subs: [
+        {
+          subtitle: "aeon",
+          link: "/about",
+        },
+        {
+          subtitle: "address residences",
+          link: "/about",
+        },
+        {
+          subtitle: "park gate",
+          link: "/about",
+        },
+        {
+          subtitle: "avonlea",
+          link: "/about",
+        },
+        {
+          subtitle: "bayline",
+          link: "/about",
+        },
+        {
+          subtitle: "club drive",
+          link: "/about",
+        },
+        {
+          subtitle: "alana",
+          link: "/about",
+        },
+        {
+          subtitle: "parkside views residence",
+          link: "/about",
+        },
+        {
+          subtitle: "nima",
+          link: "/about",
+        },
+        {
+          subtitle: "clearpoint",
+          link: "/about",
+        },
+      ],
+    },
+    {
+      title: "Emaar International",
+      subs: [
+        {
+          subtitle: "ksa",
+          link: "/about",
+        },
+        {
+          subtitle: "india",
+          link: "/about",
+        },
+        {
+          subtitle: "pakistan",
+          link: "/about",
+        },
+        {
+          subtitle: "egypt",
+          link: "/about",
+        },
+        {
+          subtitle: "turkey",
+          link: "/about",
+        },
+        {
+          subtitle: "morocco",
+          link: "/about",
+        },
+        {
+          subtitle: "china",
+          link: "/about",
+        },
+      ],
+    },
+  ];
+
   return (
     <div
       style={{
@@ -48,24 +209,60 @@ const Footer = () => {
                 }}
                 placeholder="Enter email"
               />
-              <button
-                style={{
-                  backgroundColor: "#000000",
-                  color: "#ffffff",
-                  height: "50px",
-                  border: "none",
-                  fontSize: "1rem",
-                  padding: "0 70px",
-                  cursor: "pointer",
-                }}
-              >
-                SUBSCRIBE
-              </button>
+              <button className="btn btn-primary btn-sub">SUBSCRIBE</button>
             </div>
           </Grid>
         </Grid>
-        <Divider />
+        <Divider
+          style={{
+            margin: "50px 0",
+          }}
+        />
+        <Grid container spacing={2}>
+          {footerContent.map((item, index) => {
+            return (
+              <Grid item xs={12} md={3} key={index}>
+                <h2>{item.title}</h2>
+                {item.subs.map((sub, index) => {
+                  return (
+                    <p key={index}>
+                      <a href={sub.link}>{sub.subtitle}</a>
+                    </p>
+                  );
+                })}
+              </Grid>
+            );
+          })}
+        </Grid>
         {/* </BottomNavigation> */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: "50px",
+            paddingBottom: "50px",
+          }}
+        >
+          <div style={{ marginRight: "20px" }}>
+            <Typography>Privacy Policy</Typography>
+          </div>
+          <Divider
+            orientation="vertical"
+            flexItem
+            style={{ marginRight: "20px" }}
+          />
+          <div style={{ marginRight: "20px" }}>
+            <Typography>Emaar Properties Terms and Conditions</Typography>
+          </div>
+          <Divider
+            orientation="vertical"
+            flexItem
+            style={{ marginRight: "20px" }}
+          />
+          <div>
+            <Typography>Country and Language</Typography>
+          </div>
+        </div>
       </Container>
     </div>
   );

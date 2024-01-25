@@ -24,19 +24,7 @@ const Tile = ({ title, desc, img, link }) => {
       >
         <h1>{title}</h1>
         <p>{desc}</p>
-        <button
-          style={{
-            backgroundColor: "#000000",
-            color: "#ffffff",
-            height: "50px",
-            border: "none",
-            fontSize: "1rem",
-            padding: "0 70px",
-            cursor: "pointer",
-          }}
-        >
-          Learn More
-        </button>
+        <button className="btn btn-secondary">Learn More</button>
       </div>
     </Grid>
   );
