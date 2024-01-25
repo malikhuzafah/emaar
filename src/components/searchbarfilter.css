@@ -2,13 +2,12 @@
   width: 80%;
   height: 80px;
   background-color: #fff;
-  border-radius: 5px;
   display: flex;
   align-items: center;
-
   justify-content: space-between;
   padding: 0 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
 }
 .search__button {
   height: 60%;
