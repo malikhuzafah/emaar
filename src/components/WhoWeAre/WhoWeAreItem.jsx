@@ -4,25 +4,13 @@ const WhoWeAreItem = ({ title, desc, link }) => {
   return (
     <div
       style={{
-        backgroundColor: "lightcoral",
+        backgroundColor: "#F8F9FB",
         padding: "50px",
       }}
     >
       <h3>{title}</h3>
       <p>{desc}</p>
-      <button
-        style={{
-          backgroundColor: "lightblue",
-          border: "none",
-          padding: "10px 50px",
-          color: "#ffffff",
-          fontSize: "20px",
-          cursor: "pointer",
-          marginTop: "20px",
-        }}
-      >
-        Learn More
-      </button>
+      <button className="btn btn-primary">Learn More</button>
     </div>
   );
 };

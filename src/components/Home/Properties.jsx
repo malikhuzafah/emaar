@@ -20,19 +20,7 @@ const Properties = () => {
               providing an aspirational lifestyle within a thriving community,
               supported by Emaar’s community management team.
             </p>
-            <button
-              style={{
-                backgroundColor: "#000000",
-                color: "#ffffff",
-                height: "50px",
-                border: "none",
-                fontSize: "1rem",
-                padding: "0 70px",
-                cursor: "pointer",
-              }}
-            >
-              View All Properties
-            </button>
+            <button className="btn btn-secondary">View All Properties</button>
           </div>
         </Grid>
         <Grid item xs={12} sm={4}>

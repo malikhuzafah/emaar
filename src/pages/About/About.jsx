@@ -184,19 +184,7 @@ const About = () => {
               VALUABLE, MOST INNOVATIVE AND MOST ADMIRED COMPANIES"
             </h2>
             <Heading title="FOUNDER | MOHAMED ALABBAR" />
-            <button
-              style={{
-                backgroundColor: "lightblue",
-                border: "none",
-                padding: "10px",
-                color: "#ffffff",
-                fontSize: "20px",
-                cursor: "pointer",
-                marginTop: "20px",
-              }}
-            >
-              Read Founder's letter
-            </button>
+            <button className="btn btn-secondary">Read Founder's letter</button>
           </div>
         </div>
         <Divider
@@ -232,19 +220,7 @@ const About = () => {
               );
             })}
           </Grid>
-          <button
-            style={{
-              backgroundColor: "lightblue",
-              border: "none",
-              padding: "10px",
-              color: "#ffffff",
-              fontSize: "20px",
-              cursor: "pointer",
-              marginTop: "20px",
-            }}
-          >
-            View all awards
-          </button>
+          <button className="btn btn-primary">View all awards</button>
         </div>
         <Divider
           style={{
