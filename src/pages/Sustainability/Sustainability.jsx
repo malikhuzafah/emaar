@@ -9,39 +9,39 @@ const Sustainability = () => {
   const data = [
     {
       title: "Our Stories",
-      img: "/assets/sustainability.jpg",
+      img: "/assets/sus-our.jpg",
       link: "/",
     },
-    {
-      title: "Our Stories",
-      img: "/assets/sustainability.jpg",
-      link: "/",
-    },
-    {
-      title: "Our Stories",
-      img: "/assets/sustainability.jpg",
-      link: "/",
-    },
-    {
-      title: "Our Stories",
-      img: "/assets/sustainability.jpg",
-      link: "/",
-    },
-    {
-      title: "Our Stories",
-      img: "/assets/sustainability.jpg",
-      link: "/",
-    },
-    {
-      title: "Our Stories",
-      img: "/assets/sustainability.jpg",
-      link: "/",
-    },
-    {
-      title: "Our Stories",
-      img: "/assets/sustainability.jpg",
-      link: "/",
-    },
+    // {
+    //   title: "Our Stories",
+    //   img: "/assets/sustainability.jpg",
+    //   link: "/",
+    // },
+    // {
+    //   title: "Our Stories",
+    //   img: "/assets/sustainability.jpg",
+    //   link: "/",
+    // },
+    // {
+    //   title: "Our Stories",
+    //   img: "/assets/sustainability.jpg",
+    //   link: "/",
+    // },
+    // {
+    //   title: "Our Stories",
+    //   img: "/assets/sustainability.jpg",
+    //   link: "/",
+    // },
+    // {
+    //   title: "Our Stories",
+    //   img: "/assets/sustainability.jpg",
+    //   link: "/",
+    // },
+    // {
+    //   title: "Our Stories",
+    //   img: "/assets/sustainability.jpg",
+    //   link: "/",
+    // },
   ];
 
   return (
@@ -64,24 +64,26 @@ const Sustainability = () => {
         >
           <h1>OUR APPROACH TOWARDS SUSTAINABILITY</h1>
           <p>
-            At Emerald Prestige, we consider sustainability to be a fundamental
-            aspect of our lives. It is an investment in the future of both
-            society and ourselves. Therefore, we are confident that integrating
-            sustainability into our business strategy will result in economic,
-            environmental, and social advancement. <br /> <br /> Emerald
-            Prestige’s overall approach to sustainability is guided by our
-            Sustainable Development Goals. In addition, our Code of Conduct
-            guides the behaviour of all employees in relation to their
-            colleagues, local communities, and the environment. At an
-            operational level, we have a suite of procedures and policies that
-            we follow in line with national regulatory and international
-            standards. <br /> <br /> All of these factors influence our approach
-            to providing high-quality jobs, safe and secure employment, employee
-            well-being, and opportunities for professional development. In
-            addition, they influence how we communicate and consult with our
-            investors, communities, government bodies, and suppliers in our
-            operating areas, as well as how we monitor and enhance our
-            sustainable performance.
+            At Emerald Prestige, we view sustainability as an integral part of
+            our existence—an investment not only in the future of society but
+            also in our own. With this conviction, we are confident that
+            incorporating sustainability into our business strategy will yield
+            progress in economic, environmental, and social dimensions. <br />
+            <br /> Our commitment to sustainability at Emerald Prestige is
+            anchored in the pursuit of Sustainable Development Goals and
+            reinforced by our Code of Conduct, which shapes the conduct of all
+            employees in their interactions with colleagues, local communities,
+            and the environment. Operationally, we adhere to a comprehensive set
+            of procedures and policies aligned with both national regulations
+            and international standards.
+            <br />
+            <br /> These guiding principles influence our approach to providing
+            high-quality employment, ensuring workplace safety, promoting
+            employee well-being, and fostering opportunities for professional
+            growth. Furthermore, they shape how we engage with and communicate
+            with our investors, communities, governmental entities, and
+            suppliers within our operational areas, as well as guide our ongoing
+            efforts to monitor and enhance our sustainable performance.
           </p>
           <button className="btn btn-secondary">
             View More <ArrowForwardIcon />

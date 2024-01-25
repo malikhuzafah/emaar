@@ -70,22 +70,22 @@ const About = () => {
   const other = [
     {
       title: "Emerald Prestige HOSPITALITY",
-      img: "/assets/home.jpg",
+      img: "/assets/hospitality.jpg",
       link: "/",
     },
     {
       title: "Emerald Prestige MALLS",
-      img: "/assets/home.jpg",
+      img: "/assets/malls.jpg",
       link: "/",
     },
     {
       title: "BURJ KHALIFA",
-      img: "/assets/home.jpg",
+      img: "/assets/burj.jpg",
       link: "/",
     },
     {
       title: "Emerald Prestige ENTERTAINMENT",
-      img: "/assets/home.jpg",
+      img: "/assets/entertainment.jpg",
       link: "/",
     },
   ];
@@ -93,20 +93,20 @@ const About = () => {
   const abouts = [
     {
       title: "Investor Relations",
-      desc: "Emerald Prestige is a Public Joint Stock Company listed on the Dubai Financial Market. View Emerald Prestige’s stock market trends and related data.",
+      desc: "Emerald Prestige is a publicly traded Joint Stock Company, and its shares are listed on the Dubai Financial Market. Explore the stock market trends and associated data for Emerald Prestige.",
       link: "/",
       img: "/assets/about-relations.jpg",
     },
     {
-      title: "Investor Relations",
-      desc: "Emerald Prestige is a Public Joint Stock Company listed on the Dubai Financial Market. View Emerald Prestige’s stock market trends and related data.",
+      title: "Corporate Sustainability",
+      desc: "We view sustainability as a cornerstone of our existence, representing an investment in the future for both society and ourselves.",
       link: "/",
-      img: "/assets/about-relations.jpg",
+      img: "/assets/sus-our.jpg",
     },
     {
-      title: "Investor Relations",
-      desc: "Emerald Prestige is a Public Joint Stock Company listed on the Dubai Financial Market. View Emerald Prestige’s stock market trends and related data.",
-      img: "/assets/about-relations.jpg",
+      title: "Foundation",
+      desc: "We view sustainability as a cornerstone of our existence, representing an investment in the future for both society and ourselves.",
+      img: "/assets/foundation.jpg",
       link: "/",
     },
   ];
@@ -134,15 +134,15 @@ const About = () => {
         >
           <Container>
             <Heading title="Overview" />
-            <h1>ABOUT Emerald Prestige PROPERTIES</h1>
+            <h1>ABOUT Emerald Prestige</h1>
             <p>
-              With a net asset value of 138.1B AED (37.6B USD)*, Emerald
-              Prestige Properties is among the most admired and valuable real
-              estate development companies in the world. Emerald Prestige, which
-              has established competencies in real estate, retail and shopping
-              malls, hospitality, and leisure, shapes new lifestyles through its
-              commitment to design excellence, build quality, and timely
-              delivery.
+              Emerald Prestige Properties stands as one of the world's esteemed
+              and valuable real estate development firms, boasting a net asset
+              value of 138.1 billion AED (37.6 billion USD)*. The company,
+              renowned for its expertise in real estate, retail and shopping
+              malls, hospitality, and leisure, is dedicated to crafting
+              innovative lifestyles through a steadfast commitment to design
+              excellence, construction quality, and punctual project delivery.
             </p>
             <p
               style={{
@@ -193,7 +193,7 @@ const About = () => {
             marginBottom: "150px",
           }}
         />
-        <div
+        {/* <div
           style={{
             textAlign: "center",
           }}
@@ -221,7 +221,7 @@ const About = () => {
             })}
           </Grid>
           <button className="btn btn-primary">View all awards</button>
-        </div>
+        </div> */}
         <Divider
           style={{
             marginTop: "150px",

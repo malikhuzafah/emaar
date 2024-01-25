@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./filter.css";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 // import FilterModal from "./FilterModal";
 
 export default function Filter({ children, onApply, label, options }) {
@@ -71,7 +72,9 @@ export default function Filter({ children, onApply, label, options }) {
           <span style={{ fontSize: "15px" }}>{children}</span>
           <span style={{ fontSize: "18px", fontWeight: "600" }}>Any</span>
         </div>
-        <div>v</div>
+        <div>
+          <KeyboardArrowDownIcon />
+        </div>
       </div>
 
       {isOpen && (

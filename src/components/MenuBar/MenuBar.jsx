@@ -13,6 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { useNavigate, useLocation } from "react-router-dom";
+import { Link } from "@mui/material";
 
 const pages = [
   { name: "About us", link: "/about" },
@@ -74,12 +75,16 @@ function MenuBar() {
               width: "400px",
             }}
           ></div> */}
-          <img
-            src="/assets/logo.jpg"
-            alt="Emerald Prestige"
-            height={50}
-            width={100}
-          />
+          <Link sx={{ display: { xs: "none", md: "flex" } }}>
+            <a href="/">
+              <img
+                src="/assets/logo.jpg"
+                alt="Emerald Prestige"
+                height={50}
+                width={100}
+              />
+            </a>
+          </Link>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           {/* <Typography
             variant="h6"
@@ -136,7 +141,24 @@ function MenuBar() {
             </Menu>
           </Box>
 
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <Link
+            href="/"
+            sx={{
+              display: { xs: "flex", md: "none", flexGrow: 1 },
+              mr: 1,
+            }}
+          >
+            {/* <a href="/"> */}
+            <img
+              src="/assets/logo.jpg"
+              alt="Emerald Prestige"
+              height={50}
+              width={100}
+            />
+            {/* </a> */}
+          </Link>
+
+          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -154,7 +176,7 @@ function MenuBar() {
             }}
           >
             Emerald Prestige
-          </Typography>
+          </Typography> */}
           <Box
             sx={{
               flexGrow: 1,
@@ -184,9 +206,15 @@ function MenuBar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              <button
+                className="btn btn-secondary"
+                onClick={handleOpenUserMenu}
+              >
+                Contact
+              </button>
+              {/* <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
+              </IconButton> */}
             </Tooltip>
             <Menu
               sx={{ mt: "45px" }}
